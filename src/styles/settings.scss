@@ -1,0 +1,81 @@
+/* Цвет фона */
+$background-color: #ffffff;
+$input-border-color: #b3b3b3;
+$input-border-color-focused: #ffffff;
+$input-placeholder-color: #ffffff;
+
+/* Сброс стандартных стилей браузера */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Добавление центрирования всего контента */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  background-color: $background-color;
+}
+
+/* Центрирование контента внутри блока */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.default-input {
+  font-family: inherit;
+  padding: 10px 15px;
+  box-sizing: border-box;
+  transition: border-color 0.2s;
+  min-width: 328px;
+}
+
+.default-input:focus {
+  border-color: $input-border-color-focused;
+  outline: none;
+}
+
+.default-input[placeholder] {
+  color: $input-placeholder-color;
+}
+
+.input-add-dishes-dish-name {
+  font-family: inherit;
+  padding: 10px 15px;
+  box-sizing: border-box;
+  transition: border-color 0.2s;
+  width: 340px;
+  margin: 0 5px;
+}
+
+.input-add-dishes-dish-price {
+  font-family: inherit;
+  padding: 10px 15px;
+  box-sizing: border-box;
+  transition: border-color 0.2s;
+  width: 250px;
+  margin: 0 5px;
+}
+
+.card-spacer-col {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.card-spacer-row {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin: 20px;
+}
